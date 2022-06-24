@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+anime="https://www.youtube.com/playlist?list=PLHTKLxwsrgbNIP4l5WWa7LxcYAJoTVyo_"
+pf="https://www.youtube.com/playlist?list=PLhQUoAdN4R7ytEmY82zECcnnmEwfUWEcz"
+dj="https://www.youtube.com/playlist?list=PL74YUbdVlea7ufU--pMoqv8OjKWsMFkhP"
+dance="--start=4:58  --ab-loop-a=4:58 --ab-loop-b=8:05  https://www.youtube.com/v/WipvWtdVwy8"
+murga="https://www.youtube.com/playlist?list=PL8A8KVPHHokwbOL5LrW2Nqx0n8_dlDlgt"
+erb="https://www.youtube.com/playlist?list=PL96675BDF95286773"
+moe="https://listen.moe/stream"
+mpv_args="--no-video -shuffle " 
+ARGS="$1"
+
+notify-send "AUDIOTUBE" "$ARGS"
+
+case $1 in "dance" ) mpv $mpv_args $dance;;
+    "murga" ) mpv $mpv_args $murga;;
+    "dj" ) mpv $mpv_args $dj;;
+    "pf" ) mpv $mpv_args $pf;;
+    "anime" ) mpv $mpv_args $anime;;
+    "moe" ) mpv $mpv_args $moe;;
+    "erb" ) mpv $mpv_args $erb;;
+    * ) echo "That's wrong spelling bruh";;
+esac
+
+

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/lucifer/Documents/Python/beautiful_soup/gehu'
+let g:netrw_dirhist_2='/home/lucifer/Hackathon/starter-snake-python/snake1'
+let g:netrw_dirhist_1='/home/lucifer/Hackathon'
+let g:netrw_dirhist_0='/home/lucifer/Hackathon/starter-snake-python'
+let g:netrw_dirhist_9='/home/lucifer/Hackathon/starter-snake-python/snake1'
+let g:netrw_dirhist_8='/home/lucifer/Hackathon/starter-snake-python'
+let g:netrw_dirhist_7='/home/lucifer/Hackathon/starter-snake-python/snake1'
+let g:netrw_dirhist_6='/home/lucifer/Documents/Python/beautiful_soup/gehu'
+let g:netrw_dirhist_5='/home/lucifer/Documents/Python/beautiful_soup/gehu/secret'
+let g:netrw_dirhist_4='/home/lucifer/Documents/Python/beautiful_soup/gehu'

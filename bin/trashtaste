@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+curl -s 'https://anchor.fm/s/62d12970/podcast/rss' | awk '/enclosure/{system("wget -nc -P /home/lucifer/Music/TrashTastePodcast "$2);exit}' FS=\"
+
