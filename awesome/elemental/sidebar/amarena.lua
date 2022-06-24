@@ -276,6 +276,8 @@ function sidebar_activate_prompt(action)
     prompt = generate_prompt_icon("", x.color2)
   elseif action == "web_search" then
     prompt = generate_prompt_icon("", x.color4)
+  elseif action == "translate" then
+    prompt = generate_prompt_icon("", x.color4)
   end
   helpers.prompt(action, search_text, prompt, function()
     search_icon.visible = true

@@ -344,6 +344,15 @@ keys.globalkeys = gears.table.join(
       end
     end,
     { description = "activate sidebar web search prompt", group = "awesome" }),
+  -- Translate
+  awful.key({ superkey, altkey }, "t",
+    function()
+      -- Not all sidebars have a prompt
+      if sidebar_activate_prompt then
+        sidebar_activate_prompt("translate")
+      end
+    end,
+    { description = "activate sidebar web search prompt", group = "awesome" }),
 
   -- Dismiss notifications and elements that connect to the dismiss signal
   awful.key({ ctrlkey }, "space",
